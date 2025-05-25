@@ -8,15 +8,14 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://images.unsplash.com/photo-1587502536263-9298fefdc7a4') no-repeat center center fixed;
+      background: url('background.png') no-repeat center center fixed;
       background-size: cover;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      text-align: center;
       padding: 20px;
+      text-align: center;
+      min-height: 100vh;
     }
 
     .logo {
@@ -38,13 +37,25 @@
       border-radius: 10px;
     }
 
-    p {
-      font-size: 1.1em;
-      margin-bottom: 1.5em;
-      color: #444;
-      background-color: rgba(255, 255, 255, 0.75);
+    .button-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .button-link {
+      text-decoration: none;
+      background-color: #2980b9;
+      color: white;
       padding: 8px 16px;
-      border-radius: 10px;
+      border-radius: 20px;
+      font-size: 1em;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .button-link:hover {
+      background-color: #1c5f8f;
     }
 
     .circle-button {
@@ -96,7 +107,12 @@
 <body>
   <img class="logo" src="logo.png" alt="Mommy Rhoyell Logo" />
   <h1>Mommy Rhoyell</h1>
-  <p>Passionate Content Creator & Digital Storyteller</p>
+
+  <div class="button-group">
+    <a href="about.html" class="button-link">About Me</a>
+    <a href="content.html" class="button-link">My Content</a>
+  </div>
+
   <button class="circle-button">Hire Me</button>
 
   <div class="social-links">
