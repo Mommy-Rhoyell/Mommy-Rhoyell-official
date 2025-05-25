@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mommy Rhoyell - Content Creator</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1587502536263-9298fefdc7a4') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo {
+      margin-top: 20px;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #333;
+      margin: 20px 0 10px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 1.5em;
+      color: #444;
+      background-color: rgba(255, 255, 255, 0.75);
+      padding: 8px 16px;
+      border-radius: 10px;
+    }
+
+    .circle-button {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #2980b9;
+      color: white;
+      font-size: 1.1em;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: pulse 2s infinite;
+      margin: 20px;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(41, 128, 185, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 20px rgba(41, 128, 185, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(41, 128, 185, 0);
+      }
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 15px;
+      background-color: white;
+      border: 2px solid #2980b9;
+      border-radius: 8px;
+      color: #2980b9;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background-color: #2980b9;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <img class="logo" src="logo.png" alt="Mommy Rhoyell Logo" />
+  <h1>Mommy Rhoyell</h1>
+  <p>Passionate Content Creator & Digital Storyteller</p>
+  <button class="circle-button">Hire Me</button>
+
+  <div class="social-links">
+    <a href="https://www.facebook.com/share/1B7n29k3Sr/" target="_blank">Facebook</a>
+    <a href="https://www.tiktok.com/@mommyrhoyellandazaya" target="_blank">TikTok</a>
+    <a href="https://www.instagram.com/mommy_rhoyell?igsh=MWxlc2kzMGk5MDl6Mw==" target="_blank">Instagram</a>
+  </div>
+</body>
+</html>
